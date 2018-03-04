@@ -1,2 +1,2 @@
 # camp-trip-server
-For Booking Trips
+For booking trips.
