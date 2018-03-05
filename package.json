@@ -1,0 +1,7 @@
+{
+  "name": "camp-trip-server",
+  "version": "0.0.1",
+  "description": "For booking trips.",
+  "author": "Aaron Houlihan",
+  "repository": "github.com:mounthouli/camp-trip-server"
+}
