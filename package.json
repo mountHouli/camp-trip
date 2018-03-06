@@ -6,7 +6,9 @@
   "repository": "github.com:mounthouli/camp-trip-server",
   "license": "SEE LICENSE IN LICENSE.txt",
   "scripts": {
-    "lint": "eslint \"src/**\"; exit 0;"
+    "lint": "eslint \"src/**\" \"dev/**\"; exit 0;",
+    "gen-data": "node dev/generateData.js",
+    "clean-data": "node dev/cleanData.js"
   },
   "dependencies": {
     "express": "^4.16.2",
