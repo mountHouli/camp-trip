@@ -4,6 +4,7 @@
   "description": "For booking trips.",
   "author": "Aaron Houlihan",
   "repository": "github.com:mounthouli/camp-trip-server",
+  "license" : "SEE LICENSE IN LICENSE.txt",
   "dependencies": {
     "express": "^4.16.2"
   }
