@@ -4,9 +4,12 @@
   "description": "For booking trips.",
   "author": "Aaron Houlihan",
   "repository": "github.com:mounthouli/camp-trip-server",
-  "license" : "SEE LICENSE IN LICENSE.txt",
+  "license": "SEE LICENSE IN LICENSE.txt",
   "dependencies": {
     "express": "^4.16.2",
     "mongoose": "^5.0.9"
+  },
+  "devDependencies": {
+    "eslint": "^4.18.2"
   }
 }
