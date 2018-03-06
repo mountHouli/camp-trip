@@ -5,6 +5,9 @@
   "author": "Aaron Houlihan",
   "repository": "github.com:mounthouli/camp-trip-server",
   "license": "SEE LICENSE IN LICENSE.txt",
+  "scripts": {
+    "lint": "eslint \"src/**\"; exit 0;"
+  },
   "dependencies": {
     "express": "^4.16.2",
     "mongoose": "^5.0.9"
