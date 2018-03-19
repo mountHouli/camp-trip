@@ -9,9 +9,9 @@ const users = []
 
 for (let i = 0; i < 10; i++) {
   users.push(new User({
-    firstName: faker.name.findName(),
-    middleName: faker.name.findName(),
-    lastName: faker.name.findName(),
+    firstName: faker.name.firstName(),
+    middleName: faker.name.firstName(),
+    lastName: faker.name.lastName(),
     email: faker.internet.email(),
     phone: faker.phone.phoneNumber(),
     street1: `${faker.address.streetAddress} ${faker.address.streetName} ${faker.address.streetSuffix}`,
