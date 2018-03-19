@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "faker": "^4.1.0",
+    "koa": "^2.5.0",
     "mongoose": "^5.0.9"
   },
   "devDependencies": {
