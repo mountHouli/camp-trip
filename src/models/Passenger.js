@@ -5,6 +5,7 @@ module.exports = mongoose.model('Passenger', {
   middleName: String,
   lastName: String,
   email: String,
+  phone: String,
   street1: String,
   street2: String,
   city: String,

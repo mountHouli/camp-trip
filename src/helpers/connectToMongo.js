@@ -10,7 +10,8 @@ if (!connected) {
 
 function connectToMongo () {
   return new Promise((resolve, reject) => {
-    mongoose.connect('mongodb://localhost:27017/test', (err) => {
+    // !! fix this url
+    mongoose.connect('mongodb://localhost:27017/camptrip', (err) => {
       if (err) {
         console.log('Mongoose errored while trying to connect to MongoDB...')
         console.log(err)

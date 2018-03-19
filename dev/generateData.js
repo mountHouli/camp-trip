@@ -12,6 +12,8 @@ for (let i = 0; i < 10; i++) {
     firstName: faker.name.findName(),
     middleName: faker.name.findName(),
     lastName: faker.name.findName(),
+    email: faker.internet.email(),
+    phone: faker.phone.phoneNumber(),
     street1: `${faker.address.streetAddress} ${faker.address.streetName} ${faker.address.streetSuffix}`,
     street2: null,
     city: faker.address.city(),
