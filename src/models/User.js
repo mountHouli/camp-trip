@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-module.exports = mongoose.model('Passenger', {
+module.exports = mongoose.model('User', {
   firstName: String,
   middleName: String,
   lastName: String,

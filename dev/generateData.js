@@ -3,12 +3,12 @@ const mongoose = require('mongoose')
 
 require('../src/helpers/connectToMongo.js')
 
-const Passenger = require('../src/models/Passenger.js')
+const User = require('../src/models/User.js')
 
-const passengers = []
+const users = []
 
 for (let i = 0; i < 10; i++) {
-  passengers.push(new Passenger({
+  users.push(new User({
     firstName: faker.name.findName(),
     middleName: faker.name.findName(),
     lastName: faker.name.findName(),
@@ -24,7 +24,7 @@ for (let i = 0; i < 10; i++) {
   }))
 }
 
-Promise.all(passengers.map(passenger => passenger.save()))
+Promise.all(users.map(user => user.save()))
   .then(() => {
     mongoose.connection.close()
   })
