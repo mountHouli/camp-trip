@@ -6,6 +6,7 @@
   "repository": "github.com:mounthouli/camp-trip-server",
   "license": "SEE LICENSE IN LICENSE.txt",
   "scripts": {
+    "start": "nodemon ./src/app.js",
     "lint": "eslint \"src/**\" \"dev/**\"; exit 0;",
     "gen-data": "node dev/generateData.js",
     "clean-data": "node dev/cleanData.js"
