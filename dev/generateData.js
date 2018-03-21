@@ -24,10 +24,42 @@ for (let i = 0; i < 10; i++) {
   }))
 }
 
-Promise.all(users.map(user => user.save()))
-  .then(() => {
+const Trip = require('../src/models/Trip.js')
+
+const trips = []
+
+for (let i = 0; i < 10; i++) {
+  trips.push(new Trip({
+    // !! names are a bit easier to search for.  Replace this with better placeholder data.
+    name: faker.name.lastName(),
+    flights: [
+      {
+        from: faker.name.firstName(),
+        to: faker.name.firstName()
+      },
+      {
+        from: faker.name.firstName(),
+        to: faker.name.firstName()
+      },
+      {
+        from: faker.name.firstName(),
+        to: faker.name.firstName()
+      }
+    ]
+  }))
+}
+
+;(async () => {
+  try {
+    await Promise.all(users.map(user => user.save()))
+    await Promise.all(trips.map(trip => trip.save()))
     mongoose.connection.close()
-  })
+  }
+  catch (err) {
+    console.log('Error saving mock data')
+    console.log(err)
+  }
+})()
 
 function randomNineDigitNumber () {
   return Math.floor(Math.random() * 1000000000)
