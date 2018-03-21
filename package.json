@@ -11,6 +11,7 @@
     "clean-data": "node dev/cleanData.js"
   },
   "dependencies": {
+    "@koa/cors": "^2.2.1",
     "faker": "^4.1.0",
     "koa": "^2.5.0",
     "koa-router": "^7.4.0",
