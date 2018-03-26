@@ -13,6 +13,11 @@ var corsOptions = {
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
+app.use(async (ctx, next) => {
+  console.log(`${ctx.method} ${ctx.url}` )
+  await next()
+})
+
 app.use(cors(corsOptions))
 
 app.use(router.routes())
